@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlyneLabs | Untethered Communication</title>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;600;700;800&family=Azeret+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <div class="top-bar">
+        <div class="logo-area">
+            ALYNE<span style="color: var(--primary);">LABS</span>
+        </div>
+        
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="nav-links" id="nav-links">
+            <a href="#vision" class="nav-item">Vision</a>
+            <a href="#protocol" class="nav-item">Protocol</a>
+            <a href="#economy" class="nav-item">Economy</a>
+            <a href="#download" class="nav-btn">AlyneNet</a>
+        </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <div class="hero-box">
+        <div class="hero-content">
+            <div class="label-tag">Decentralized Peer-to-Peer</div>
+            <h1>
+                Building the Future <br> of <span style="color: var(--primary);">Communication</span>.
+            </h1>
+            <p>
+                Decentralized, Private, and Untethered. A self-sustaining network that can operate offline, empowering communities with true digital independence.
+            </p>
+            <div class="btn-container">
+                <a href="#download">
+                    <button class="main-btn">Download Module</button>
+                </a>
+                <a href="#vision">
+                    <button class="sec-btn">Explore Vision</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- THE PROBLEM SECTION -->
+    <div class="section-container" id="vision">
+        <div class="section-head">
+            <h2>The Hidden <span style="color: var(--primary);">Cost</span> of Centralization</h2>
+            <div class="accent-bar"></div>
+        </div>
+        
+        <div class="grid-3">
+            <div class="info-card">
+                <i class="fa-solid fa-user-secret card-icon"></i>
+                <h3 class="card-head">Privacy Under Siege</h3>
+                <p class="card-desc">Centralized platforms harvest user data continuously. Surveillance and tracking have become the norm.</p>
+            </div>
+
+            <div class="info-card">
+                <i class="fa-solid fa-server card-icon"></i>
+                <h3 class="card-head">Big Tech Dependency</h3>
+                <p class="card-desc">Corporate-controlled infrastructure creates single points of failure. When platforms fail, everything stops.</p>
+            </div>
+
+            <div class="info-card">
+                <i class="fa-solid fa-signal card-icon"></i>
+                <h3 class="card-head">Connectivity Gap</h3>
+                <p class="card-desc">Remote areas and offline users face complete communication breakdown during ISP outages.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SOLUTION SECTION -->
+    <div class="split-section">
+        <div class="text-side">
+            <h2>Our Solution: <br><span style="color: var(--primary);">Offline Mesh</span> Network</h2>
+            <p>
+                A peer-to-peer system that works completely without the internet for short distances. Devices connect directly, creating a resilient, self-healing layer.
+            </p>
+            <div class="check-list">
+                <div class="check-item"><i class="fa-solid fa-check" style="color: var(--primary);"></i> Censorship-Resistant</div>
+                <div class="check-item"><i class="fa-solid fa-check" style="color: var(--primary);"></i> Infrastructure-Free</div>
+                <div class="check-item"><i class="fa-solid fa-check" style="color: var(--primary);"></i> Privacy-First Encryption</div>
+            </div>
+        </div>
+        <div class="visual-side">
+            <div class="circle-box">
+                <div class="pulse-ring"></div>
+                <i class="fa-solid fa-circle-nodes main-icon"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- SYSTEM WORKFLOW -->
+    <div class="section-container">
+        <div class="section-head">
+            <h2>System Workflow</h2>
+            <p style="color: var(--primary); font-family: var(--font-mono); font-size: 0.9rem; margin-top: 10px;">From Installation to Connection</p>
+        </div>
+        <div class="grid-4">
+            <div class="step-box">
+                <div class="step-num">01</div>
+                <h4>App Installation</h4>
+                <p>Internet used only once to download. Operates offline after.</p>
+            </div>
+            <div class="step-box">
+                <div class="step-num">02</div>
+                <h4>Wallet Creation</h4>
+                <p>Mnemonic phrases generate unique cryptographic keys.</p>
+            </div>
+            <div class="step-box">
+                <div class="step-num">03</div>
+                <h4>Ping Server</h4>
+                <p>Brief connection to register and generate IPVX address.</p>
+            </div>
+            <div class="step-box active-step">
+                <div class="step-num">04</div>
+                <h4>Offline Mesh</h4>
+                <p>Devices connect peer-to-peer using IPVX addressing.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROTOCOL SECTION -->
+    <div class="section-container" id="protocol">
+        <div class="section-head">
+            <h2><span style="color: var(--primary);">IPVX</span> Protocol</h2>
+            <p style="color: #aaa; font-size: 1rem; margin-top: 10px;">Our proprietary addressing protocol designed for offline mesh networks.</p>
+        </div>
+        
+        <div class="protocol-wrap">
+            <div class="proto-text">
+                <h3 style="margin-top:0; margin-bottom: 2rem; font-size: 1.5rem;">Address Structure</h3>
+                <div class="proto-row">
+                    <span style="color: var(--primary);">Prefix Byte</span>
+                    <span>1 Byte (Address Type)</span>
+                </div>
+                <div class="proto-row">
+                    <span style="color: var(--primary);">Core Address</span>
+                    <span>16 Bytes (Main ID)</span>
+                </div>
+                <div class="proto-row">
+                    <span style="color: var(--primary);">User Suffix</span>
+                    <span>1 Byte (Device Info)</span>
+                </div>
+            </div>
+            <div class="proto-visual">
+                <h3 style="margin-top:0; margin-bottom: 2rem; font-size: 1.5rem;">Network Benefits</h3>
+                <ul class="benefit-list">
+                    <li><strong>Custom Addressing:</strong> Efficient in high-latency.</li>
+                    <li><strong>Hex-Based:</strong> Rapid packet propagation.</li>
+                    <li><strong>Scalability:</strong> Dynamic structure.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER / DOWNLOAD -->
+    <div class="footer-area" id="download">
+        <div class="label-tag">Download ALYNENET Module</div>
+        <h2>Join the <span style="color: var(--primary);">Movement</span></h2>
+        <p class="footer-desc">Digital sovereignty starts with a single node. Download the module.</p>
+        
+        <div class="download-grid">
+            <div class="dl-card">
+                <i class="fa-brands fa-apple" style="font-size: 3rem; color: var(--primary); margin-bottom: 0.01rem;"></i>
+                <h3>IOS</h3>
+                <h2>ALYNENET</h2>
+                <p style="color: #888; font-size: 0.9rem;">Mobile Mnemonic Node for IOS.</p>
+                <button class="dl-btn">Download .ipa</button>
+            </div>
+            <div class="dl-card" style="border: solid 0.05rem var(--primary);">
+                <i class="fa-brands fa-android" style="font-size: 3rem; color: var(--primary); margin-bottom: 0.01rem;"></i>
+                <h3>Android</h3>
+                <h2>ALYNENET</h2>
+                <p style="color: #888; font-size: 0.9rem;">Mobile Mnemonic Node for android OS.</p>
+                <button class="dl-btn">Download .apk</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-area f-a2" id="download">
+        <div class="label-tag">ALYNENET Services</div>
+        <div class="section-head">
+            <h2>DOWNLOAD OUR EXCLUSIVE SERVICES <span style="color: var(--primary);">POWERED BY ALYNENET</span></h2>
+        </div>
+        <p class="footer-desc">Experience The Future Of Networking Services.</p>
+        
+        <div class="download-grid d-g2">
+            <div class="dl-card">
+                <i class="fa-brands fa-android icon-dl"></i>
+
+                <h1 style="color: var(--primary)">ALYNE CHAT</h1>
+                <div style="width: 100%; display: flex;">
+                    <p style = "font-family: var(--font-mono); font-size: 0.9rem; margin-top: 10px; margin-bottom: -10px;">Description and Features</p>
+                </div>
+                <p class="description">AlyneChat is a revolutionary decentralized communication platform designed to keep you connected to friends and family when the traditional world goes dark.</p>
+                <div style="width: 100%; display: flex;">
+                    <p style = "font-family: var(--font-mono); font-size: 0.9rem; margin-top: 10px; margin-bottom: 8px;">Required Dependencies :</p>
+                </div>
+                <div style="width: 100%; display: flex;">
+                    <div style="display: block;">
+                        <div class="label-tag l-t2">ALYNENET module</div>
+                        <div class="label-tag l-t2">WiFi - Direct</div>
+                        <div class="label-tag l-t2">Bluetooth</div>
+                        <div class="label-tag l-t2">Android Ver.11+</div>
+                    </div>
+                </div>
+
+                <button class="dl-btn">Download .APK</button>
+            </div>
+            <div class="dl-card">
+                <i class="fa-brands fa-android icon-dl"></i>
+
+                <h1 style="color: var(--primary)">ALYNE PAY</h1>
+                <div style="width: 100%; display: flex;">
+                    <p style = "font-family: var(--font-mono); font-size: 0.9rem; margin-top: 10px; margin-bottom: -10px;">Description and Features</p>
+                </div>
+                <p class="description">AlyneChat is a revolutionary decentralized communication platform designed to keep you connected to friends and family when the traditional world goes dark.</p>
+                <div style="width: 100%; display: flex;">
+                    <p style = "font-family: var(--font-mono); font-size: 0.9rem; margin-top: 10px; margin-bottom: 8px;">Required Dependencies :</p>
+                </div>
+                <div style="width: 100%; display: flex;">
+                    <div style="display: block;">
+                        <div class="label-tag l-t2">ALYNENET module</div>
+                        <div class="label-tag l-t2">WiFi - Direct</div>
+                        <div class="label-tag l-t2">Bluetooth</div>
+                        <div class="label-tag l-t2">Android Ver.11+</div>
+                        
+                    </div>
+                </div>
+
+                <button class="dl-btn">Download .APK</button>
+            </div>
+            <div class="dl-card">
+                <i class="fa-brands fa-android icon-dl"></i>
+
+                <h1 style="color: var(--primary)">ALYNE FILES</h1>
+                <div style="width: 100%; display: flex;">
+                    <p style = "font-family: var(--font-mono); font-size: 0.9rem; margin-top: 10px; margin-bottom: -10px;">Description and Features</p>
+                </div>
+                <p class="description">AlyneChat is a revolutionary decentralized communication platform designed to keep you connected to friends and family when the traditional world goes dark.</p>
+                <div style="width: 100%; display: flex;">
+                    <p style = "font-family: var(--font-mono); font-size: 0.9rem; margin-top: 10px; margin-bottom: 8px;">Required Dependencies :</p>
+                </div>
+                <div style="width: 100%; display: flex;">
+                    <div style="display: block;">
+                        <div class="label-tag l-t2">ALYNENET module</div>
+                        <div class="label-tag l-t2">WiFi - Direct</div>
+                        <div class="label-tag l-t2">Bluetooth</div>
+                        <div class="label-tag l-t2">Android Ver.11+</div>
+                        
+                    </div>
+                </div>
+
+                <button class="dl-btn">Download .APK</button>
+            </div>
+            <div class="dl-card">
+                <i class="fa-brands fa-android icon-dl"></i>
+
+                <h1 style="color: var(--primary)">ALYNE BROWSER</h1>
+                <div style="width: 100%; display: flex;">
+                    <p style = "font-family: var(--font-mono); font-size: 0.9rem; margin-top: 10px; margin-bottom: -10px;">Description and Features</p>
+                </div>
+                <p class="description">AlyneChat is a revolutionary decentralized communication platform designed to keep you connected to friends and family when the traditional world goes dark.</p>
+                <div style="width: 100%; display: flex;">
+                    <p style = "font-family: var(--font-mono); font-size: 0.9rem; margin-top: 10px; margin-bottom: 8px;">Required Dependencies :</p>
+                </div>
+                <div style="width: 100%; display: flex;">
+                    <div style="display: block;">
+                        <div class="label-tag l-t2">ALYNENET module</div>
+                        <div class="label-tag l-t2">WiFi - Direct</div>
+                        <div class="label-tag l-t2">Bluetooth</div>
+                        <div class="label-tag l-t2">Android Ver.11+</div>
+                        
+                    </div>
+                </div>
+
+                <button class="dl-btn">Download .APK</button>
+            </div>
+        </div>
+        
+
+        <div class="bottom-note">
+            Decentralized. Private. Resilient. | Powered by AlyneLabs
+        </div>
+    </div>
+
+
+    <script src="{{url_for('static', filename = 'index.js')}}"></script>
+</body>
+</html>
